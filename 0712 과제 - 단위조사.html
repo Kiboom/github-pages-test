@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS 단위 조사</title>
+	<style>
+		#head{
+			font-weight: bold;
+			text-align: center;
+			background: rgba(100, 100, 100, 0.2);
+		}
+		#em{
+			font-size: 1em;
+			font
+		}
+		#ex{
+			font-size: 1ex;
+		}
+		#ch{
+			font-size: 1ch;
+		}
+		#rem{
+			font-size: 0.7rem;
+		}
+		#vw{
+			font-size: 1.2vw;
+		}
+		#vh{
+			font-size: 2vh;
+		}
+		#vmin{
+			font-size: 2vmin;
+		}
+		#vmax{
+			font-size: 1.2vmax;
+		}			
+		table, tr, td{
+			border: 1px solid rgba(70, 70, 70, 0.2);
+			border-collapse: collapse;
+			padding: 8px;
+		}
+		.name{
+			width: 3rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		#tip{
+			text-align: center;
+			background: rgba(200, 30, 30, 0.07);
+			font-size: 0.7rem;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<h1>상대 길이</h1>
+	<table summary="상대 길이">
+		<thead>
+			<tr id="head">
+				<td class="name">이름</td>
+				<td>설명</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="em">
+				<td class="name">em</td>
+				<td>부모 요소의 폰트 크기에서 'M'의 너비를 1로 함 (보통 1em=12pt=16px가 기본)</td>
+			</tr>
+			<tr id="ex">
+				<td class="name">ex</td>
+				<td>부모 요소의 폰트 크기에서 'x'의 높이를 1로 함 (거의 안씀)</td>
+			</tr>
+			<tr id="ch">
+				<td class="name">ch</td>
+				<td>부모 요소의 폰트 크기에서 '0'의 너비를 1로 함</td>
+			</tr>
+			<tr id="rem">
+				<td class="name">rem</td>
+				<td>em과 같되, 부모 요소가 아닌 시조(root=html)를 기준으로 함</td>
+			</tr>
+			<tr id="vw">
+				<td class="name">vw</td>
+				<td>뷰포트 너비의 1%를 단위로 함</td>
+			</tr>
+			<tr id="vh">
+				<td class="name">vh</td>
+				<td>뷰포트 높이의 1%를 단위로 함</td>
+			</tr>
+			<tr id="vmin">
+				<td class="name">vmin</td>
+				<td>뷰포트의 너비, 높이 중 작은 것의 1%</td>
+			</tr>			
+			<tr id="vmax">
+				<td class="name">vmax</td>
+				<td>뷰포트의 너비, 높이 중 큰 것의 1%</td>
+			</tr>															
+		</tbody>
+		<tfoot id="tip">
+			<tr>
+				<td>TIP</td>
+				<td align="left">em과 rem은 완벽한 scalable layout을 만드는데 유용함!</td>
+		</tfoot>
+	</table>
+	<div>	
+		<h1><br>절대 길이</h1>
+	</div>
+	<table summary="절대 길이">
+		<thead>
+			<tr id="head">
+				<td class="name">이름</td>
+				<td>설명</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="cm">
+				<td class="name">em</td>
+				<td>센티미터</td>
+			</tr>
+			<tr id="mm">
+				<td class="name">ex</td>
+				<td>밀리미터</td>
+			</tr>
+			<tr id="in">
+				<td class="name">ch</td>
+				<td>인치. 96픽셀. 2.54cm</td>
+			</tr>
+			<tr id="px">
+				<td class="name">rem</td>
+				<td>픽셀. 1/96인치.</td>
+			</tr>
+			<tr id="pt">
+				<td class="name">vw</td>
+				<td>포인트. 1/72인치.</td>
+			</tr>
+			<tr id="pc">
+				<td class="name">vh</td>
+				<td>파이카. 12포인트.</td>
+			</tr>										
+		</tbody>
+		<tfoot id="tip">
+			<tr>
+				<td>TIP</td>
+				<td align="left">1픽셀은 디스플레이에 따라 상대적임. 저해상도 기기는 dot 하나가 1픽셀인데, 고해상도 기기는 여러 dots가 1픽셀.</td>
+		</tfoot>
+	</table>	
+
+</body>
+</html>
