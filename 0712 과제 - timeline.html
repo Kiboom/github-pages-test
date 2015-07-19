@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>김기범의 타임라인</title>
+	<style type="text/css">
+		#global-header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: #FF9B99;
+			height: 35px;
+			width: 100%;
+			z-index: 10000;
+			border-bottom: 7px solid #FFAEA8;
+		}
+		#search{
+			position: fixed;
+			top: 5px;
+			left: 110px;
+			font-size: 11pt;
+			padding: 3px;
+			width: 20em;
+			border: 0;
+			border-radius: 5px;
+			outline: none;
+			z-index: 10000;
+		}
+		#search-submit{
+			position: fixed;
+			top: 5px;
+			left: 415px;
+			font-size: 11pt;
+			color: white;
+			padding: 3px;
+			width: 3em;
+			border: 0;
+			border-radius: 5px;
+			background: #8AC007;
+			outline: none;
+			z-index: 10000;	
+		}
+		#logo{
+			position: fixed;
+			color: white;
+			top: -18px;
+			left: 12px;
+			font-size: 15pt;
+			font-family: "mistral", cursive;
+			z-index: 10000;
+		}
+		#sidebar{
+			position: absolute;
+			top: 32px;
+			left: 0;
+			height: 2000px;
+			width: 123px;
+			border-right: 10px solid rgba(0,0,0, 0.08);
+			background:  #A8D87A;
+			z-index: 2500;
+		}
+		#sidebar-list{
+			position: absolute;
+			top: 4px;
+			left: -14px;
+			list-style-type: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<header id="global-header">
+		<form fieldset="http://taegon.kim/form.php" method="POST">
+			<p id="logo">TimeLine</p>
+			<input type="text" id="search" placeholder="  검색할 이름이나 그룹을 입력해보세요">
+			<button type="submit" id="search-submit" value="검색어">찾기</button>
+		</form>
+	</header>
+	<aside id="sidebar">
+		<ul id="sidebar-list">
+			<li><h3>즐겨찾기</h3></li>
+			<li><h3>그룹</h3></li>
+			<li><h3>앱 리스트</h3></li>
+		</ul>
+	</aside>										
+</body>
+</html>
