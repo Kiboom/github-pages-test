@@ -1,0 +1,102 @@
+		#global-header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: #FF9B99;
+			height: 35px;
+			width: 100%;
+			z-index: 10000;
+			border-bottom: 7px solid #FFAEA8;
+		}
+		#search{
+			position: fixed;
+			top: 5px;
+			left: 110px;
+			font-size: 11pt;
+			padding: 3px;
+			width: 20em;
+			border: 0;
+			border-radius: 5px;
+			outline: none;
+			z-index: 10000;
+		}
+		#search-submit{
+			position: fixed;
+			top: 5px;
+			left: 415px;
+			font-size: 11pt;
+			color: white;
+			padding: 3px;
+			width: 3em;
+			border: 0;
+			border-radius: 5px;
+			background: #8AC007;
+			outline: none;
+			z-index: 10000;	
+		}
+		#logo{
+			position: fixed;
+			color: white;
+			top: -18px;
+			left: 12px;
+			font-size: 15pt;
+			font-family: "mistral", cursive;
+			z-index: 10000;
+		}
+		#sidebar{
+			position: absolute;
+			top: 32px;
+			left: 0;
+			height: 2000px;
+			width: 123px;
+			border-right: 10px solid rgba(0,0,0, 0.08);
+			background:  #A8D87A;
+			z-index: 2500;
+		}
+		#sidebar-list{
+			position: absolute;
+			top: 4px;
+			left: -14px;
+			list-style-type: none;
+			color: white;
+		}
+		#poem{
+			position: absolute;
+			top: 400px;
+			left: 500px;
+			width: 500px;
+			height: 1000px;
+			margin-left:100px;
+			margin-top:100px;
+			padding: 3px;
+			border: 3px solid #FF9B99;
+			background-color: 1px solid #FFAEA8; 
+			font-family: 돋움, Dotum, sans-serif;
+		}
+		#title1{
+			font-weight: bold;
+			text-shadow: -1px -1px #666666;
+			letter-spacing: 0.2em;
+		}
+		#author1{
+			text-align: right;
+			text-transform: capitalize;
+			text-decoration: underline;
+		}
+		#text1{
+			color: black;
+			background-color: black;
+			font-size: 10pt;
+			font-style: italic;
+			font-weight: normal;
+			text-indent: 3px;
+			word-spacing: 0.2em;
+			line-height: 1em;
+		}
+
+
+
+
+
+
+
