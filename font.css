@@ -60,14 +60,13 @@
 			list-style-type: none;
 			color: white;
 		}
-		#poem{
-			position: absolute;
-			top: 400px;
-			left: 500px;
+		#text{
+			position: relative;
+			top: 40px;
+			left: 50px;
 			width: 500px;
-			height: 1000px;
-			margin-left:100px;
-			margin-top:100px;
+			height: 300px;
+			margin: 10px auto 10px auto;
 			padding: 3px;
 			border: 3px solid #FF9B99;
 			background-color: 1px solid #FFAEA8; 
@@ -83,15 +82,15 @@
 			text-transform: capitalize;
 			text-decoration: underline;
 		}
-		#text1{
+		#poem{
 			color: black;
-			background-color: black;
 			font-size: 10pt;
 			font-style: italic;
 			font-weight: normal;
 			text-indent: 3px;
 			word-spacing: 0.2em;
 			line-height: 1em;
+
 		}
 
 
