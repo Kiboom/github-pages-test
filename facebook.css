@@ -473,7 +473,7 @@ body{
 
 .right{
 	top: 56px;
-	left: 842px;
+	margin-left: 690px;
 	width: 280px;
 	height: 656px;
 	float: right;
