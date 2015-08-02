@@ -475,14 +475,14 @@ body{
 	top: 56px;
 	margin-left: 690px;
 	width: 280px;
-	height: 656px;
+	height: 550px;
 	float: right;
 	position: fixed !important;	
 }
 
 .ad{
 	width: 280px;
-	height: 656px;
+	height: 550px;
 	display: block;
 	padding: 12px;
 	background: rgba(255,255,255,1);
