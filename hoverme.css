@@ -39,7 +39,7 @@ p{
 span:hover+ul{
     cursor: pointer;
     display: block;
-    position: fixed;
+    position: absolute;
     top: 47px;
 }
 div+span{
