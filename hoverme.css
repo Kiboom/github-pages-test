@@ -5,10 +5,10 @@ div{
 
 div span{
     width: 93px;
-	padding: 10px;
-	color: white;
-	border-radius: 3px;
-	background: black;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    background: black;
     float: left;
     box-sizing: border-box;
 }
