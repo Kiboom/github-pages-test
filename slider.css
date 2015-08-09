@@ -197,11 +197,6 @@ body{
 }
 
 
-.hidden-menu:hover{
-	color: rgba(200, 84, 100, 1);
-}
-
-
 #menu2{
 	position: relative;
 	top: -13px;
@@ -264,17 +259,172 @@ body{
 }
 
 
+.anchor{
+	text-decoration: none;
+	color: white;
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+
+
+.anchor:hover{
+	color: rgba(200, 84, 100, 1);
+}
+
+.main-title{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 600px;
+	height: 122px;
+	padding: 25px;
+	margin: 0 auto 0 170px;
+	box-sizing: border-box;
+	font-size: 44pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.q2{
+	position: relative;
+	width: 600px;
+	height: 350px;
+	margin: 0 auto 0 150px;
+	padding: 40px 20px 20px 20px;
+}
+
+
+.q2-title{
+	position: relative;
+	width: 600px;
+	height: 80px;
+	padding: 20px;
+	border: 1px solid rgba(180, 180, 180, 1);	
+	background-color: rgba(240, 240, 240, 1);
+	font-size: 20pt;
+	font-weight: bold;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	transition-property: background-color color;
+	transition-duration: 0.3s;
+}
+
+.q2-contents{
+	position: relative;
+	width: 600px;
+	height: 265px;
+	padding: 25px 25px 25px 40px;
+	border: 1px solid rgba(0, 0, 0, 0.17);	
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.15);
+	font-size: 10pt;
+	font-weight: bold;
+	box-sizing: border-box;
+	line-height: 26px;
+}
+
+
+.q2 p{
+	margin: 0;
+}
+
+
+.q2-title:hover{
+	background-color: rgba(200, 84, 100, 0.83);
+	color: white;
+}
+
+
+.q2-cover{
+	position: relative;
+	top: -290px;
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	background-color: rgba(242, 242, 242, 1);
+	transition-property: background-color, height;
+	transition-duration: 0.7s;
+	transition-delay: 0.2s, 0s;
+}
 
 
 
+.q2:hover + .q2-cover{
+	background-color: rgba(242, 242, 242, 0);
+	height: 300px;
+}
 
 
 
+.q3{
+	position: relative;
+	top: -330px;
+	width: 600px;
+	height: 350px;
+	margin: 0 auto 0 150px;
+	padding: 40px 20px 20px 20px;
+}
 
 
+.q3-title{
+	position: relative;
+	width: 600px;
+	height: 80px;
+	padding: 20px;
+	border: 1px solid rgba(180, 180, 180, 1);	
+	background-color: rgba(240, 240, 240, 1);	
+	font-size: 20pt;
+	font-weight: bold;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	transition-property: background-color color;
+	transition-duration: 0.3s;
+}
+
+.q3-contents{
+	position: relative;
+	width: 600px;
+	height: 265px;
+	padding: 25px 25px 25px 40px;
+	border: 1px solid rgba(180, 180, 180, 1);	
+	margin: 0;
+	background-color: rgba(215, 215, 215, 1);
+	font-size: 12pt;
+	font-weight: bold;
+	box-sizing: border-box;
+	line-height: 26px;
+}
 
 
+.q3-title:hover{
+	background-color: rgba(205, 99, 116, 1);
+	color: white;
+}
 
 
+.q3-cover{
+	position: relative;
+	top: -265px;
+	width: 100%;
+	height: 300px;
+	margin: 0;
+	background-color: rgb(242, 242, 242);
+	transition-property: top;
+	transition-duration: 0.7s;
+}
+
+
+.q3-title:hover ~ .q3-cover{
+	top: 300px;
+}
+
+.q3-contents:hover ~ .q3-cover{
+	top: 300px;
+}
 
 

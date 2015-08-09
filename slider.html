@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>slider</title>
-	<link rel="stylesheet" type="text/css"	href="slider.css">
+	<meta charset="utf-8">>
+    <title>slider</title>
+    <link rel="stylesheet" type="text/css" href="slider.css">
 </head>
+
 <body>
-	<input type="checkbox" id="hambergers" class="hamberger" href="">
-	<label for="hambergers"></label>
-	<div class="front"></div>	
-	<div class="back">
-		<div class="menu-title">Menus</div>
-		<div class="menu-title-bar"></div>
-		<div class="menu-group">
-				<!--menu1-->
-				<input type="checkbox" class="click-me" id="click-me">
-				<label for="click-me">Click Me!</label>
-				<div id="menu1" class="menu"></div>
-				<div id="triangle1" class="menu-triangle"></div>
-				<ul id="click-me-hidden" class="hidden-menues">
-					<li class="hidden-menu" id="click-hidden-menu1">1st Menu</li>
-					<li class="hidden-menu" id="click-hidden-menu2">2nd Menu</li>
-				</ul>	
-				<!--menu2-->
-				<div id="menu2" class="menu">	
-					<div class="hover-me">Hover Me!</div>
-					<div id="triangle2" class="menu-triangle"></div>
-					<ul id="hover-me-hidden" class="hidden-menues">
-						<li class="hidden-menu" id="hover-hidden-menu1">1st Menu</li>
-						<li class="hidden-menu" id="hover-hidden-menu2">2nd Menu</li>
-					</ul>
-					<div class="hidden-cover"></div>
-				</div>
-					
-		</div>
-	</div>
+    <input type="checkbox" id="hambergers" class="hamberger" href="">
+    <label for="hambergers"></label>
+    <div class="front">
+    	<div class="main-title">Web UI Basic</div>
+    	<article id="q2" class="q2" >
+    		<div class="q2-title">Q2.  XHTML에서 CDATA 섹션을 둔 이유?</div>
+			<div class="q2-contents">
+				<p>원칙적으로 모든 XML 텍스트들은 XML parser에 의해 파싱된다.</p>
+				<p>그런데 스크립트는 통상적인 XHTML 언어가 아니므로, 파싱할 때 오류가 발생한다. </p>
+				<p>즉, 파싱되지 않도록 방지해야 하는데, 이러한 데이터를 “CDATA(unparsed Character Data)”라고 한다. </p>
+				<p>CDATA 작성 방식은 위와 같다. 양 옆을 “< >”로 묶는 이유는,  “< >“가 데이터가 아닌 태그의 시작으로 해석되기 때문이다.</p>
+				<p>또한 //로 주석처리한 이유는, CDATA[]로 묶어주는 부분이 스크립트 문법에 맞지 않기 때문이다. 즉, 브라우저가 이 부분을 해석하지 못하는 경우에 대비하기 위해서이다.</p>
+			</div>
+    	</article>
+    	<div id="q3" class="cover q2-cover"></div>    
+    	<article class="q3">
+    		<div class="q3-title">Q3.  태그의 language 속성 폐지 시점?</div>
+			<div class="q3-contents"><a href="http://www.w3.org/TR/REC-html32#script" class="link1">http://www.w3.org/TR/REC-html32#script</a>
+				<a href="http://www.w3.org/TR/html401/index/list.html" class="link2">http://www.w3.org/TR/html401/index/list.html</a>
+				<a href="http://stackoverflow.com/questions/8734372/difference-between-script-type-and-script-language-declarations" class="link3">http://stackoverflow.com/questions/8734372/difference-between-script-type-and-script-language-declarations</a>
+				<p>"script" 엘리먼트가 처음 만들어진 것은 HTML3.2부터였고,
+				HTML4.0부터는 type이 language 속성을 대신하게 되었다.
+				</p>
+			</div>	
+		    <div class="cover q3-cover"></div>    		
+    	</article>  
+    </div>
+    <div class="back">
+        <div class="menu-title">Menus</div>
+        <div class="menu-title-bar"></div>
+        <div class="menu-group">
+            <!--menu1-->
+            <input type="checkbox" class="click-me" id="click-me">
+            <label for="click-me">Click Me!</label>
+            <div id="menu1" class="menu"></div>
+            <div id="triangle1" class="menu-triangle"></div>
+            <ul id="click-me-hidden" class="hidden-menues">
+                <li class="hidden-menu" id="click-hidden-menu1"><a href="#q2" class="q2-anchor anchor">Question 2</a></li>
+                <li class="hidden-menu" id="click-hidden-menu2"><a href="#q3" class="q3-anchor anchor">Question 3</a></li>
+            </ul>
+            <!--menu2-->
+            <div id="menu2" class="menu">
+                <div class="hover-me">Hover Me!</div>
+                <div id="triangle2" class="menu-triangle"></div>
+                <ul id="hover-me-hidden" class="hidden-menues">
+                    <li class="hidden-menu" id="hover-hidden-menu1"><a href="#q2" class="q2-anchor anchor">Question 2</a></li>
+                    <li class="hidden-menu" id="hover-hidden-menu2"><a href="#q3" class="q3-anchor anchor">Question 3</a></li>
+                </ul>
+                <div class="hidden-cover"></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
