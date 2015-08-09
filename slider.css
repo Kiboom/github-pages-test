@@ -1,0 +1,280 @@
+body{
+	overflow-x: hidden;
+	font-family: "AppleGothic", arial, sans-serif; 
+}
+
+.front{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background-color: rgb(242, 242, 242);
+	z-index: 5;
+	transition-property: left box-shadow;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;	
+}
+
+.back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 226px;
+	height: 1000px;
+	background-color: rgb(64,64,64);
+}
+
+.hamberger{
+	display: none;
+}
+
+.hamberger + label{
+	display: block;
+	position: fixed;
+	top: 30px;
+	left: 50px;
+	width: 40px;
+	height: 40px;
+	background-image: url("http://i60.tinypic.com/20v0tok.png");
+	background-size: 40px 40px;
+	cursor: pointer;
+	z-index: 6;
+	transition-property: left;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;	
+}
+
+.hamberger:checked + label{
+	display: block;
+	position: fixed;
+	top: 30px;
+	left: 286px;
+	width: 40px;
+	height: 40px;
+	background-image: url("http://i62.tinypic.com/awc009.png");
+	background-size: 40px 40px;
+	cursor: pointer;
+	z-index: 6;	
+}
+
+
+.hamberger:checked + label ~ .front{
+	left: 226px;
+	box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);	
+}
+
+
+.menu-title{
+	position: relative;
+	top: 25px;
+	width: 170px;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 36pt;
+	font-weight: bold;
+	color: white;
+}
+
+
+.menu-title-bar{
+	position: relative;
+	top: 5px;
+	width: 150px;
+	height: 5px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+
+.menu-group{
+	position: relative;
+	width: 100%;
+	height: 640px;
+	margin: 50px 0 0 0;
+	font-size: 17pt;
+	font-weight: 100;
+	color: white;
+}
+
+
+.menu{
+	position: relative;
+	width: 226px;
+	height: 40px;
+	margin: 0 auto;
+	cursor: pointer;
+	z-index: 1;
+}
+
+
+#menu1{
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;	
+}
+
+
+.menu-triangle{
+	width: 23px;
+	height: 11px;
+	margin: 0px 10px 0px 35px;
+	background-image: url("http://i57.tinypic.com/30ikq6h.jpg");
+	background-size: 23px;
+	transition: 0.2s;
+	z-index: 2;
+}
+
+#triangle1{
+	position: relative;
+	top: -27px;
+	left: -5px;
+}
+
+.click-me{
+	display: none;
+}
+
+
+.click-me + label{
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 5px;
+	left: 72px;	
+	width: auto;
+	height: 30px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#menu1:hover{
+	background-color: rgba(56, 60, 51, 1);
+}
+
+.click-me + label:hover ~ #menu1{
+	background-color: rgba(56, 60, 51, 1);
+}
+
+
+.click-me:checked ~ .menu-triangle{
+	transform: rotate(45deg);
+}
+
+
+.click-me:checked ~ #menu2{
+	top: 115px;
+}
+
+
+.hidden-menues{
+	display: block;
+	width: 226px;
+	height: 127px;
+	margin: 0;
+	padding: 20px 20px 20px 60px;
+	box-sizing: border-box;
+	background-color: rgb(28, 28, 28);
+	box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 1);	
+	font-size: 15pt;
+}
+
+
+#click-me-hidden{
+	position: absolute;
+	top: 40px;
+}
+
+
+.hidden-menu{
+	width: 139px;
+	height: 46px;
+	padding: 4px 0 0 15px;
+	box-sizing: border-box;
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+
+
+.hidden-menu:hover{
+	color: rgba(200, 84, 100, 1);
+}
+
+
+#menu2{
+	position: relative;
+	top: -13px;
+	background-color: rgb(64,64,64);
+	transition-property: background-color, top;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;		
+}
+
+.hover-me{
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 6px;
+	left: 72px;	
+	width: auto;
+	height: 30px;
+	cursor: pointer;	
+}
+
+#triangle2{
+	position: relative;
+	top: 15px;
+	left: -5px;
+}
+
+#hover-me-hidden{
+	position: relative;
+	top: 27px;
+}
+
+
+#menu2:hover{
+	background-color: rgba(54, 58, 49, 1);
+}
+
+
+#menu2:hover .menu-triangle{
+	transform: rotate(45deg);
+}
+
+
+#menu2:hover .hidden-cover{
+	top: 127px;
+}
+
+
+.hidden-cover{
+	position: relative;
+	top: -100px;
+	display: block;
+	width: 226px;
+	height: 127px;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(64,64,64);
+	z-index: 1;
+	transition-property: top;
+	transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
