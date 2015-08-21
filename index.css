@@ -1,0 +1,135 @@
+body{
+	overflow-x: hidden;
+	font-family: "AppleGothic", arial, sans-serif; 
+	margin: 0;
+}
+
+.top-bar{
+	position: fixed;
+	width: 100%;
+	height: 18px;
+	margin: 0;
+	padding-top: 2px;
+	box-sizing: border-box;
+	background-color: rgba(255, 250, 223, 1);
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.posting{
+	position: fixed;
+	top: 18px;
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	padding: 7px 5px 0 5px;
+	box-sizing: border-box;
+	background-color: rgba(226, 240, 217, 1);
+	transition-property: height;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;	
+}
+
+.posting-textbox{
+	position: relative;
+	width: 143px;
+	height: 35px;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.5);
+	outline-style: none;
+	transition-property: top, height;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;		
+}
+
+.posting-send{
+	position: relative;
+	top: -8px;
+	width: 30px;
+	height: 37px;
+	padding: 0;
+	border-radius: 4px;
+	font-size: 5pt;
+	font-weight: bold;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: rgba(197, 224, 180, 1);
+	cursor: pointer;	
+	outline-style: none;
+	transition-property: left;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.posting-send:hover{
+	background-color: rgba(197, 224, 180, 0.3);		
+}
+
+
+.hide-pic{
+	color: rgba(0,0,0,0);
+	position: relative;
+	left: 45%;	
+	width: 18px;
+	height: 10px;
+	background: url("http://i59.tinypic.com/o0saxz.jpg");
+	background-repeat: no-repeat;
+	background-size: 15px;
+	transition-property: background;
+	transition-delay: 0.2s;
+	transition-duration: 0.0s;	
+	transition-timing-function: ease;	
+}
+
+
+.posting-hide{
+	display: none;
+}
+
+.posting-hide + label{
+	display: block;
+	position: fixed;
+	top: 67px;
+	width: 100%;
+	height: 18px;
+	padding: 0;
+	z-index: 2;
+	transition-property: top;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;	
+}
+
+.posting-hide:checked + label{
+	top: 21px;
+}
+
+.posting-hide:checked + label .hide-pic{
+	background: rgba(0,0,0,0);
+}
+
+
+.posting-hide:checked ~ .posting{
+	height: 24px;
+}
+
+
+.posting-hide:checked ~ .posting .posting-textbox{
+	top: -5px;
+	width: 180px;
+	height: 15px;	
+} 
+
+
+.posting-hide:checked ~.posting .posting-send{
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
