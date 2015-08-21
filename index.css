@@ -50,7 +50,7 @@ body{
 .posting-send{
 	position: fixed;
 	top: 33px;
-	left: 385px;
+	right: 7px;
 	width: 30px;
 	height: 37px;
 	padding: 0;
