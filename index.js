@@ -12,6 +12,8 @@ posting_textbox.addEventListener ('focus', function (event) {
     posting_style.paddingRight = "65px";
     posting_textbox_style.width = '100%';
     posting_textbox_style.height = '27px';
+	posting_textbox_style.fontSize = '11pt';
+    posting_textbox_style.fontWeight = 'normal';
     posting_send_style.opacity = 1;
     posting_send_style.right = "5px";
 
@@ -30,6 +32,8 @@ window.addEventListener ("scroll", function (event) {
         posting_style.paddingRight = "10px";
         posting_textbox_style.width = '99%';
         posting_textbox_style.height = '13px';
+    	posting_textbox_style.fontSize = '9pt';
+        posting_textbox_style.fontWeight = '100';    
         posting_send_style.opacity = 0;
         posting_send_style.right = "-100px";
         curPos = scrollY;
