@@ -32,7 +32,7 @@ body{
 	box-sizing: border-box;
 	box-shadow: 1px 1px 3px #777777;
 	background-color: rgba(226, 240, 217, 1);
-	transition-property: height, padding-right;
+	transition-property: height, padding-right, position;
 	transition-duration: 0.2s;
 	transition-timing-function: ease;	
 }

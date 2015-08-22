@@ -7,6 +7,7 @@ var posting_textbox = document.querySelector(".posting-textbox");
 
 posting_textbox.addEventListener ('focus', function (event) { 
 
+	posting_style.postion = "fixed";
     posting_style.height = '63px';
     posting_style.paddingRight = "65px";
     posting_textbox_style.width = '100%';
