@@ -128,7 +128,7 @@ body{
 
 
 .posting-hide:checked ~.posting .posting-send{
-	right: -40px;
+	right: -50px;
 }
 
 
