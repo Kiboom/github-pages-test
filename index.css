@@ -15,6 +15,7 @@ body{
 	font-size: 10pt;
 	font-weight: bold;
 	text-align: center;
+	z-index: 2;
 }
 
 .posting{
@@ -27,8 +28,9 @@ body{
 	margin: 0;
 	padding: 7px 50px 0 5px;
 	box-sizing: border-box;
+	box-shadow: 1px 1px 3px #777777;
 	background-color: rgba(226, 240, 217, 1);
-	transition-property: height;
+	transition-property: height, padding-right;
 	transition-duration: 0.2s;
 	transition-timing-function: ease;	
 }
@@ -50,18 +52,18 @@ body{
 .posting-send{
 	position: fixed;
 	top: 33px;
-	right: 7px;
+	right: 8px;
 	width: 30px;
 	height: 37px;
 	padding: 0;
 	border-radius: 4px;
-	font-size: 5pt;
+	font-size: 8pt;
 	font-weight: bold;
 	border: 1px solid rgba(0, 0, 0, 0.15);
-	background-color: rgba(197, 224, 180, 1);
+	background-color: rgba(187, 214, 170, 1);
 	cursor: pointer;	
 	outline-style: none;
-	transition-property: left;
+	transition-property: right;
 	transition-duration: 0.2s;
 	transition-timing-function: ease;
 }
@@ -113,22 +115,25 @@ body{
 }
 
 .posting-hide:checked ~ .posting{
-	height: 24px;
+	height: 26px;
 }
 
 
 .posting-hide:checked ~ .posting .posting-textbox{
-	top: -5px;
+	top: -4px;
 	width: 99%;
 	height: 15px;	
 } 
 
 
 .posting-hide:checked ~.posting .posting-send{
-	opacity: 0;
+	right: -40px;
 }
 
 
+.posting-hide:checked ~.posting {
+	padding-right: 5px;
+}
 
 
 
