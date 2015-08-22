@@ -8,32 +8,12 @@ var posting_textbox = document.querySelector(".posting-textbox");
 posting_textbox.addEventListener ('focus', function (event) { 
 
 	posting_style.postion = "fixed";
-    posting_style.height = '63px';
+    posting_style.height = '40px';
     posting_style.paddingRight = "65px";
     posting_textbox_style.width = '100%';
-    posting_textbox_style.height = '35px';
-    posting_send_style.right = '3px';
-
-    var curPos = window.scrollY;
-
-	window.addEventListener ("scroll", function (event) {
-	    
-	    var top = this.scrollY;
-
-	    if (curPos < top) {
-	        posting_style.height = '30px';
-	        posting_style.paddingRight = "15px";
-	        posting_textbox_style.width = '99%';
-	        posting_textbox_style.height = '15px';
-	        posting_send_style.right = '-70px';
-	        curPos = scrollY;
-	    } /* else {
-	        posting_style.paddingRight = '65px';
-	        posting_send_style.right = '3px';
-	        curPos = scrollY;
-	    }*/
-	     
-	}, false);
+    posting_textbox_style.height = '27px';
+    posting_send_style.opacity = 1;
+    posting_send_style.right = "5px";
 
 }, false);
 
@@ -46,11 +26,12 @@ window.addEventListener ("scroll", function (event) {
     var top = this.scrollY;
 
     if (curPos < top) {
-        posting_style.height = '30px';
-        posting_style.paddingRight = "15px";
+        posting_style.height = '26px';
+        posting_style.paddingRight = "10px";
         posting_textbox_style.width = '99%';
-        posting_textbox_style.height = '15px';
-        posting_send_style.right = '-70px';
+        posting_textbox_style.height = '13px';
+        posting_send_style.opacity = 0;
+        posting_send_style.right = "-100px";
         curPos = scrollY;
     } /* else {
         posting_style.paddingRight = '65px';
