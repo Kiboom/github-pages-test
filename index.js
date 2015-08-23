@@ -8,10 +8,11 @@ var posting_textbox = document.querySelector(".posting-textbox");
 posting_textbox.addEventListener ('focus', function (event) { 
 
 	posting_style.postion = "fixed";
-    posting_style.height = '40px';
+    posting_style.height = '80px';
     posting_style.paddingRight = "65px";
     posting_textbox_style.width = '100%';
-    posting_textbox_style.height = '27px';
+    posting_textbox_style.height = '67px';
+    posting_textbox_style.fontSize = '14pt';    
     posting_send_style.opacity = 1;
     posting_send_style.right = "5px";
 
@@ -30,6 +31,7 @@ window.addEventListener ("scroll", function (event) {
         posting_style.paddingRight = "10px";
         posting_textbox_style.width = '99%';
         posting_textbox_style.height = '13px';
+        posting_textbox_style.fontSize = '10pt';
         posting_send_style.opacity = 0;
         posting_send_style.right = "-100px";
         curPos = scrollY;
