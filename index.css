@@ -37,8 +37,7 @@ body{
     transition-property: height, padding-right;
     transition-duration: 0.4s;
     transition-timing-function: ease;
-    transform:translate3d(0,0,0);
-    -webkit-transform:translate3d(0,0,0);
+
 }
 
 .posting-textbox{
