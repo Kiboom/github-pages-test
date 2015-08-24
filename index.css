@@ -78,4 +78,6 @@ body{
 }
 
 
-
+.fixfixed .header { 
+    position: absolute; 
+} 
