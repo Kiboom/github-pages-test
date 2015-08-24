@@ -9,9 +9,9 @@ posting_textbox.addEventListener ('focus', function (event) {
 
 	posting_style.postion = "fixed";
     posting_style.height = '80px';
-    posting_style.paddingRight = "65px";
+    posting_style.paddingRight = "60px";
     posting_textbox_style.width = '100%';
-    posting_textbox_style.height = '67px';
+    posting_textbox_style.height = '70px';
     posting_textbox_style.fontSize = '14pt';    
     posting_send_style.opacity = 1;
     posting_send_style.right = "5px";
@@ -22,12 +22,6 @@ posting_textbox.addEventListener ('focus', function (event) {
 
 var curPos = window.scrollY;
 
-var body = document.body,
-    html = document.documentElement;
-
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-
 window.addEventListener ("scroll", function (event) {
     
     var top = this.scrollY;
@@ -36,7 +30,7 @@ window.addEventListener ("scroll", function (event) {
         posting_style.height = '26px';
         posting_style.paddingRight = "10px";
         posting_textbox_style.width = '99%';
-        posting_textbox_style.height = '13px';
+        posting_textbox_style.height = '17px';
         posting_textbox_style.fontSize = '10pt';
         posting_send_style.opacity = 0;
         posting_send_style.right = "-100px";
