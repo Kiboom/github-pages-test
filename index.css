@@ -34,6 +34,9 @@ body{
     box-sizing: border-box;
     /*box-shadow: 1px 1px 3px #777777;*/
     background-color: rgb(247, 237, 174);
+    -webkit-transition-property: height, padding-right;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
     transition-property: height, padding-right;
     transition-duration: 0.4s;
     transition-timing-function: ease;
@@ -53,12 +56,13 @@ body{
 	background-color: rgba(255, 255, 255, 0.7);
 	outline-style: none;
 	box-sizing: border-box;
+	-webkit-transition-property: height, font-size;
+	-webkit-transition-duration: 0.4s;
+	-webkit-transition-timing-function: ease;	
 	transition-property: height, font-size;
 	transition-duration: 0.4s;
 	transition-timing-function: ease;		
 }
-
-
 
 .posting-send {
     position: fixed;
@@ -75,6 +79,9 @@ body{
     cursor: pointer;
     color: white;
     outline-style: none;
+    -webkit-transition-property: opacity, right;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;	
     transition-property: opacity, right;
     transition-duration: 0.4s;
     transition-timing-function: ease;
