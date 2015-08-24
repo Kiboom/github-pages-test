@@ -32,11 +32,13 @@ body{
     margin: 0;
     padding: 4px 60px 4px 4px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 3px #777777;
+    /*box-shadow: 1px 1px 3px #777777;*/
     background-color: rgb(247, 237, 174);
     transition-property: height, padding-right;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
 }
 
 .posting-textbox{
