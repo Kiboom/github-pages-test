@@ -121,11 +121,29 @@ BOM : Browser Object Model
 
 
 [DOM : Documnet Object Model]
-	// 
+	// activeElement : 현재 포커스가 맞춰져있는 엘리먼트
+	// defaultView : 윈도우
+	// designMode : "on"으로 바꾸면 문서 안에 있는 모든 요소들이 수정 가능!
+	// cookie : documnet.cookie="next=1" 이렇게 쓰면 document.cookie를 싹 다 지우는게 아니라, 끝에 추가만 해주는 식!
+	// readyState : 문서의 준비 상태. 주의할 점은 document에서는 이게 문자열 값인데, ajax의 readyState는 숫자값임!
+	-DOM 0 프로퍼티 : anchors에는 a태그와 관련된 것들이 싹 들어있는 배열....
+	[메소드]
+	- querySelector : 
+	- querySelectorAll() : 배열과 같은 컬렉션을 반환. 해당되는 엘리먼트를 몽땅 다 반환
+	- open() : 초기화 됨! 웹페이지가 싹 지워짐! write()로 뭘 쓸 수 있음!
+	- close() : write()로 쓸 수 없게 됨!
+	- write() : 어쨋든 셋다 요즘 잘 안씀.
 
-
-
-
+	Q. 네이버 검색어 입력창 <input> 엘리먼트 구하기
+		document.querySelectorAll('input');
+	Q. 네이버 검색어 입력창 <input> 엘리먼트 개수 구하기
+		document.querySelectorAll('input').length;
+	Q. 네이버 메인 화면의 엘러먼트 중 id가 설정된 것은 모두 몇 개인가?
+		document.querySelectorAll('[id]').length
+		// 잘 다루려면 잘 가져오는게 반이다!!
+		// 선택자를 공부해야하는 이유!! [id]하면 이런 속성을 가진 모든 엘리먼트가 설정됨!
+		// 선택자로 잘 선택했는지 확인하는 법. 콘솔에서 선택자로 찾은 엘리먼트에 우클릭해서 Reveal in Element panel 눌러보기!
+		// 다음 시간까지 무조건 선택자 공부해서 오기!!
 
 
 
