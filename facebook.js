@@ -35,13 +35,10 @@ for(var i=0 ; i<post.length ; i++){
 };
 
 
-
-
 /* 무한 스크롤 */
 
 var body = document.querySelector("body");
 var middle = document.querySelector(".middle");
-var post = document.getElementsByClassName("post")[1];
 var triggerScoll = window.innerHeight * 1.5;
 
 window.addEventListener("scroll", function(){
@@ -61,14 +58,13 @@ window.addEventListener("scroll", function(){
 	var lastPostPos = lastPost.offsetTop - window.scrollY;
 	console.log(lastPostPos);
 	if(lastPostPos < window.innerHeight/2){
-		var newPost = post.cloneNode(true);
+		var newPost = lastPost.cloneNode(true);
 		middle.appendChild(newPost);
+		newPost.addEventListener("click", plusCounts, false);		
 		newPost.style.opacity = 0;
 		window.getComputedStyle(newPost).opacity;
 		newPost.style.opacity = 1;
 	}
-
-
 });
 
 
