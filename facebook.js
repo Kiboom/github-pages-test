@@ -41,6 +41,12 @@ var body = document.querySelector("body");
 var middle = document.querySelector(".middle");
 var triggerScoll = window.innerHeight * 1.5;
 
+function newPostAnimation(newPost){
+	newPost.style.opacity = 0;
+	window.getComputedStyle(newPost).opacity;
+	newPost.style.opacity = 1;
+}
+
 window.addEventListener("scroll", function(){
 
 	/* 1번째 방법 */
@@ -54,16 +60,19 @@ window.addEventListener("scroll", function(){
 	}*/
 
 	/* 2번째 방법 : 마지막 포스트의 위치를 기준으로.. 이렇게 하면 DOM 탐색 비용이 너무 비싸다. */
+	var random = Math.ceil(Math.random()*7);
+	var url = "url('http://kiboom.github.io/" + random + ".png')";
 	var lastPost = middle.lastElementChild;
 	var lastPostPos = lastPost.offsetTop - window.scrollY;
 	console.log(lastPostPos);
+
 	if(lastPostPos < window.innerHeight/2){
 		var newPost = lastPost.cloneNode(true);
+		var postContents = newPost.querySelector(".post-contents");
 		middle.appendChild(newPost);
 		newPost.addEventListener("click", plusCounts, false);		
-		newPost.style.opacity = 0;
-		window.getComputedStyle(newPost).opacity;
-		newPost.style.opacity = 1;
+		newPostAnimation(newPost);
+		postContents.style.background = url;
 	}
 });
 
