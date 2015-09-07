@@ -426,7 +426,7 @@ body{
 	background: rgba(255,255,255,1);
 	border: 1px solid rgba(100,100,100,0.2);
 	border-radius: 4px;
-	transition : opacity 1000ms;
+	transition : opacity 2000ms;
 }
 #post0{
 	height: 100px;
