@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="twitter.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="main-icons">
+				<div class="top-icons home">
+					<i class="icon home-icon"></i>Home
+				</div>
+				<div class="top-icons notification">
+					<i class="icon noti-icon"></i>Notification
+				</div>
+				<div class="top-icons message">
+					<i class="icon message-icon"></i>Messages
+				</div>
+			</div>
+			<i class="twitter-icon"></i>
+		</div>
+	</header>
+	
+	<main class="main">
+		<div class="profile">
+			<div class="upper"></div>
+			<div class="bottom">
+				<div class="names">
+					<div class="name1">Kim Kibeom</div>
+					<div class="name2">@kiboom</div>
+				</div>
+				<div class="infos">
+					<div class="info-title tweets">TWEETS
+						<div class="number">423</div>
+					</div>
+					<div class="info-title following">FOLLOWING
+						<div class="number">27</div>
+					</div>
+					<div class="info-title followers">FOLLOWERS
+						<div class="number">415</div>
+					</div>
+				</div>
+			</div>
+			<img class="thumbnail" src="http://i60.tinypic.com/m7q176.jpg">
+		</div>
+		<div class="timeline">
+			<div class="posting">
+				<form action="http://api.taegon.kim/posts" method="post">
+					<div class="input-area">
+						<div class ="textinput">
+							<img class="thumbnail" src="http://i60.tinypic.com/m7q176.jpg">
+							<input class="content" name="content" type="textbox" placeholder="무슨 일이 일어나고 있나요?">
+							<input name="username" type="hidden" value="김기범">
+						</div>
+					</div>  
+					<div class="button-area">
+						<span class="character-num">121</span>
+						<button class="tweeting">
+							<img class="tweeting-icon" src="http://i57.tinypic.com/9kyzyb.png">Tweet
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="posts" id="posts">
+				<div class="post">
+					<img class="thumbnail" src="http://i60.tinypic.com/m7q176.jpg">
+					<div class="right-side">
+						<div class="names">
+							<span class="name1">Lee.Joon-Ha</span>
+							<span class="name2">@JoonHa</span>
+							<span class="posting-time">· 1h</span>
+						</div>
+						<div class="contents" id="contents0"></div>
+						<div class="functions">
+							<span class="share">
+								<i class="fa fa-share"></i>
+								<span class="share-num"></span>
+							</span>
+							<span class="retweet">
+								<i class="fa fa-retweet"></i>
+								<span class="retweet-num">27</span>
+							</span>
+							<span class="favorite">
+								<i class="fa fa-star"></i>
+								<span class="favorite-num">58</span>
+							</span>
+							<span class="etc">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="twitter.js"></script>
+</body>
+</html>

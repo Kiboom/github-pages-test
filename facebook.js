@@ -78,6 +78,16 @@ window.addEventListener("scroll", function(){
 
 
 
+document.addEventListener('keydown', function(e){
+	if(e.altKey && e.keyCode == 83){
+		console.log("yes!");
+		e.preventDefault();
+		document.querySelector(".searchbox").focus();
+	} 	
+})
+
+
+
 
 
 
