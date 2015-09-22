@@ -1,4 +1,4 @@
-function getContents(var random) {
+function getContents(random) {
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		xmlhttp = new XMLHttpRequest();
@@ -39,7 +39,7 @@ window.addEventListener("scroll", function(){
 		var postContents = newPost.querySelector(".post-contents");
 		posts.appendChild(newPost);
 		newPostAnimation(newPost);
-		function getContents(var random) {
+		function getContents(random) {
 			var xmlhttp;
 			if (window.XMLHttpRequest) {
 				xmlhttp = new XMLHttpRequest();
@@ -53,7 +53,7 @@ window.addEventListener("scroll", function(){
 				}
 			}
 			xmlhttp.open("GET", "http://api.taegon.kim/posts/page/" + random, true);
-			xmlhttp.send((Math.floor(Math.random()*10+1));
+			xmlhttp.send((Math.floor(Math.random()*10+1)));
 		}
 	}
 });
