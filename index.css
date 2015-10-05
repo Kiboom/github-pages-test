@@ -26,7 +26,7 @@ body{
     overflow: hidden;
     position: fixed;
     top: 7vh;
-    height: 80px;    
+    height: 80px;
     width: 100%;
     min-width: 211px;
     margin: 0;
@@ -40,7 +40,6 @@ body{
     transition-property: height, padding-right;
     transition-duration: 0.4s;
     transition-timing-function: ease;
-
 }
 
 .posting-textbox{
